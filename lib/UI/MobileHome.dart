@@ -52,8 +52,8 @@ class _MobileHomeState extends State<MobileHome> {
                   currentAccountPicture: CircleAvatar(
                     child: Icon(Icons.person),
                   ),
-                  accountName: Text("Tushar Nikam"),
-                  accountEmail: Text("champ96k@gmail.com")),
+                  accountName: Text("Sachindra kr Thakur"),
+                  accountEmail: Text("sachindrathakur570@gmail.com")),
               ListTile(
                 title: Text("Share"),
                 leading: Icon(Icons.share),
@@ -63,7 +63,7 @@ class _MobileHomeState extends State<MobileHome> {
                 title: Text("About"),
               ),
               Expanded(
-                child: Text("Version 1.0.1"),
+                child: Text("Version 1.0.0"),
               )
             ],
           )),
@@ -306,9 +306,8 @@ class _MobileHomeState extends State<MobileHome> {
                       SizedBox(
                         height: size.height * 0.5,
                         width: size.width * 0.6,
-                        child: const Image(
-                          fit: BoxFit.cover,
-                          image: AssetImage("images/mypic.jpeg"),
+                        child:  Image.network(
+                          "https://drive.google.com/file/d/1KI4H8KLZXCrrBZnMxdOQHqJG48ttd02G/view?usp=share_link",
                         ),
                       ),
                       Container(
