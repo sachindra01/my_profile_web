@@ -371,6 +371,42 @@ class _HomePageState extends State<HomePage> {
                                         tech2: "Flutter",
                                         tech3: "API",
                                       ),
+                                       SizedBox(
+                                        height: size.height * 0.04,
+                                      ),
+
+                                      FeatureProject(
+                                        imagePath: "images/onsite.jpeg",
+                                        ontab: () {
+                                          method.launchURL(
+                                              ''
+                                              );
+                                        },
+                                        projectDesc:
+                                            "Onsite Mobile App is a travel agency mobile app that tracks the details about the client, Flight details, and Pick and drop details, it also includes real-time chat features with push notification support . It is developed in both mobile as well as web.",
+                                        projectTitle: "Onsite app",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        tech3: "Firebase",
+                                      ),
+                                      SizedBox(
+                                        height: size.height * 0.04,
+                                      ),
+
+                                      FeatureProject(
+                                        imagePath: "images/onsite.jpeg",
+                                        ontab: () {
+                                          method.launchURL(
+                                              ''
+                                              );
+                                        },
+                                        projectDesc:
+                                            "Onsite Mobile App is a travel agency mobile app that tracks the details about the client, Flight details, and Pick and drop details, it also includes real-time chat features with push notification support . It is developed in both mobile as well as web.",
+                                        projectTitle: "Onsite app",
+                                        tech1: "Dart",
+                                        tech2: "Flutter",
+                                        tech3: "Firebase",
+                                      ),
                                       //ff
                                       const MainTiitle(
                                         number: "0.4",
