@@ -13,7 +13,7 @@ class WorkBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: const [
          WorkCustomData(
-          title: "Miracle Interface",
+          title: "Miracle Interface pvt Ltd",
           subTitle:
               "I am currently  working as Flutter Developer  and done various type of app which are android ios and web for client based in Japan",
           duration: "Feb-2022 to Present",
