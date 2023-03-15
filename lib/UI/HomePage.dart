@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> {
                                         imagePath: "images/onsite.jpeg",
                                         ontab: () {
                                           method.launchURL(
-                                              ''
+                                              's'
                                               );
                                         },
                                         projectDesc:
