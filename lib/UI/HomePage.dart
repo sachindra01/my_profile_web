@@ -1,4 +1,4 @@
-// ignore_for_file: file_names, library_private_types_in_public_api, use_full_hex_values_for_flutter_colors
+// ignore_for_file: file_names, library_private_types_in_public_api, use_full_hex_values_for_flutter_colors, avoid_web_libraries_in_flutter
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:my_profile_web/Model/Method.dart';
@@ -9,6 +9,7 @@ import 'package:my_profile_web/Widget/AppBarTitle.dart';
 import 'package:my_profile_web/Widget/CustomText.dart';
 import 'package:my_profile_web/Widget/MainTiitle.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'dart:html' as html;
 
 
 class HomePage extends StatefulWidget {
@@ -68,6 +69,12 @@ class _HomePageState extends State<HomePage> {
       child: child,
     );
   }
+
+  void downloadFile(String url) {
+   html.AnchorElement anchorElement =  html.AnchorElement(href: url);
+   anchorElement.download = url;
+   anchorElement.click();
+}
 
   @override
   Widget build(BuildContext context) {
@@ -154,8 +161,7 @@ class _HomePageState extends State<HomePage> {
                                 
                               },
                               onPressed: () {
-                                method.launchURL(
-                                    "https://drive.google.com/file/d/1yHLcrN5pCUGIeT8SrwC2L95Lv0MVbJpx/view?usp=sharing");
+                                downloadFile('assets/images/sample.pdf');
                               },
                               child: const Padding(
                                 padding: EdgeInsets.symmetric(
